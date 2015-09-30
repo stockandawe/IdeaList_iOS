@@ -42,7 +42,7 @@
         <!--DetailView-->
         <scene sceneID="itg-rc-gQV">
             <objects>
-                <viewController title="DetailView" id="QTA-yY-c4L" sceneMemberID="viewController">
+                <viewController title="DetailView" id="QTA-yY-c4L" customClass="DetailViewController" customModule="Idea_List" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="P19-XO-OBj"/>
                         <viewControllerLayoutGuide type="bottom" id="swx-dw-csy"/>
@@ -61,6 +61,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="detailContent" destination="hLw-SM-vX0" id="GrH-cK-bhZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eTO-lZ-TjG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -88,7 +91,7 @@
         <!--AddView-->
         <scene sceneID="I2A-iH-JKf">
             <objects>
-                <viewController title="AddView" id="U0C-7P-gl2" sceneMemberID="viewController">
+                <viewController title="AddView" id="U0C-7P-gl2" customClass="AddViewController" customModule="Idea_List" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="od9-RR-gqg"/>
                         <viewControllerLayoutGuide type="bottom" id="IJE-5K-QNN"/>
@@ -131,6 +134,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="detailContent" destination="5Hw-Hz-ARj" id="iwt-jf-VgD"/>
+                        <outlet property="titleText" destination="Pj8-gv-KwR" id="xTf-Oi-IG8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yo2-MR-GGo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
