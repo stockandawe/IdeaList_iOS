@@ -151,14 +151,13 @@
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Hw-Hz-ARj">
                                 <rect key="frame" x="0.0" y="205" width="375" height="462"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <accessibility key="accessibilityConfiguration" identifier="">
-                            <bool key="isElement" value="YES"/>
+                            <bool key="isElement" value="NO"/>
                         </accessibility>
                         <constraints>
                             <constraint firstItem="5Hw-Hz-ARj" firstAttribute="trailing" secondItem="eFP-pl-zGZ" secondAttribute="trailing" id="0Iw-cr-c0s"/>
@@ -202,7 +201,7 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Add A New Idea" id="dnM-z9-aoO">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Udy-Yt-T6l">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="done" id="Udy-Yt-T6l">
                             <connections>
                                 <action selector="doneButton_click:" destination="U0C-7P-gl2" id="vaR-Qp-9ei"/>
                             </connections>
@@ -210,7 +209,9 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="addButton" destination="4bQ-zi-Det" id="PtL-SO-hhu"/>
                         <outlet property="detailContent" destination="5Hw-Hz-ARj" id="iwt-jf-VgD"/>
+                        <outlet property="doneButton" destination="Udy-Yt-T6l" id="cEC-RP-8fy"/>
                         <outlet property="titleText" destination="Pj8-gv-KwR" id="xTf-Oi-IG8"/>
                     </connections>
                 </viewController>
