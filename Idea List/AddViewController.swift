@@ -41,9 +41,14 @@ class AddViewController: UIViewController {
     }
     
     @IBAction func addButton_click(sender: AnyObject) {
-        // clear out the text fields. 
+        // Call AddIdea
+        IdeaManager.AddIdea(titleText.text!, detail: detailContent.text)
+        
+        // clear out the text fields.
         titleText.text = ""
         detailContent.text = ""
+        
+
     }
 
     @IBAction func doneButton_click(sender: AnyObject) {

@@ -56,7 +56,7 @@
 		6597B9EF1BBBCD2B002E6E91 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		6597B9F51BBC5AAC002E6E91 /* customcell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = customcell.swift; path = ../customcell.swift; sourceTree = "<group>"; };
 		65E0BEC61BBC9B86005324D2 /* Idea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Idea.swift; path = ../Idea.swift; sourceTree = "<group>"; };
-		65E0BEC81BBC9BDF005324D2 /* IdeaManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdeaManager.swift; sourceTree = "<group>"; };
+		65E0BEC81BBC9BDF005324D2 /* IdeaManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IdeaManager.swift; path = ../IdeaManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,6 @@
 		659441251BBB61A100555E04 = {
 			isa = PBXGroup;
 			children = (
-				65E0BEC81BBC9BDF005324D2 /* IdeaManager.swift */,
 				659441301BBB61A100555E04 /* Idea List */,
 				659441451BBB61A200555E04 /* Idea ListTests */,
 				659441501BBB61A200555E04 /* Idea ListUITests */,
@@ -109,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				65E0BEC61BBC9B86005324D2 /* Idea.swift */,
+				65E0BEC81BBC9BDF005324D2 /* IdeaManager.swift */,
 				659441311BBB61A100555E04 /* AppDelegate.swift */,
 				659441331BBB61A100555E04 /* ViewController.swift */,
 				6597B9ED1BBBCD17002E6E91 /* AddViewController.swift */,

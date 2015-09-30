@@ -10,7 +10,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    var ideaDetail:String?
+    var ideaDetail:Idea?
 
     @IBOutlet weak var detailContent: UITextView!
     
@@ -21,7 +21,7 @@ class DetailViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        self.title = ideaDetail
+        self.title = ideaDetail!.title
     }
 
     override func didReceiveMemoryWarning() {

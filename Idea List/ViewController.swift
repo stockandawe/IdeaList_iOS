@@ -10,10 +10,14 @@ import UIKit
 
 class ViewController: UITableViewController {
 
-    let array = ["idea I", "idea II", "idea III"]
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,13 +26,15 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return array.count
+        return IdeaManager.ideas.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("customcell", forIndexPath: indexPath) as! customcell
-        cell.textLabel?.text = array[indexPath.item]
-        cell.Idea = cell.textLabel?.text
+        
+        let idea = IdeaManager.ideas[indexPath.item]
+        cell.textLabel?.text = idea.title
+        cell.idea = idea
         return cell
     }
 
@@ -36,7 +42,7 @@ class ViewController: UITableViewController {
         if(segue.identifier == "detailview") {
             let cell = sender as! customcell
             let detailview = segue.destinationViewController as! DetailViewController
-            detailview.ideaDetail = cell.Idea
+            detailview.ideaDetail = cell.idea
         }
     }
 }

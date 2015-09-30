@@ -10,7 +10,7 @@ import UIKit
 
 class customcell: UITableViewCell {
 
-    var Idea:String?
+    var idea:Idea?
 
     override func awakeFromNib() {
         super.awakeFromNib()
