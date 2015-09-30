@@ -128,18 +128,6 @@
                                     <action selector="titleDoneButton_click:" destination="U0C-7P-gl2" eventType="editingDidEndOnExit" id="uLr-PP-DKj"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bQ-zi-Det">
-                                <rect key="frame" x="0.0" y="597" width="375" height="70"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="8FY-af-O3y"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="HOQ-Sg-hC3"/>
-                                    <constraint firstAttribute="height" constant="70" id="zEH-IT-fC6"/>
-                                </constraints>
-                                <state key="normal" title="ADD">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Describe the idea briefly (optional)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYR-zr-XvS">
                                 <rect key="frame" x="0.0" y="176" width="375" height="21"/>
                                 <constraints>
@@ -150,10 +138,22 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Hw-Hz-ARj">
-                                <rect key="frame" x="0.0" y="205" width="375" height="462"/>
+                                <rect key="frame" x="0.0" y="205" width="375" height="322"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bQ-zi-Det">
+                                <rect key="frame" x="0.0" y="597" width="375" height="70"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="8FY-af-O3y"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="HOQ-Sg-hC3"/>
+                                    <constraint firstAttribute="height" constant="70" id="zEH-IT-fC6"/>
+                                </constraints>
+                                <state key="normal" title="ADD">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <accessibility key="accessibilityConfiguration" identifier="">
@@ -178,6 +178,7 @@
                             <constraint firstItem="4bQ-zi-Det" firstAttribute="leading" secondItem="7G6-eU-wVF" secondAttribute="leading" id="SnN-Q2-M3A"/>
                             <constraint firstAttribute="trailing" secondItem="Pj8-gv-KwR" secondAttribute="trailing" id="Snl-Ku-rfz"/>
                             <constraint firstItem="5Hw-Hz-ARj" firstAttribute="leading" secondItem="Pj8-gv-KwR" secondAttribute="leading" id="T5d-Xo-55C"/>
+                            <constraint firstItem="4bQ-zi-Det" firstAttribute="top" secondItem="5Hw-Hz-ARj" secondAttribute="bottom" constant="70" id="TvU-B0-Veh"/>
                             <constraint firstItem="5Hw-Hz-ARj" firstAttribute="leading" secondItem="7G6-eU-wVF" secondAttribute="leading" id="VxN-ZJ-nsB"/>
                             <constraint firstItem="Pj8-gv-KwR" firstAttribute="leading" secondItem="7G6-eU-wVF" secondAttribute="leading" id="WxP-nC-Ctg"/>
                             <constraint firstItem="IJE-5K-QNN" firstAttribute="top" secondItem="5Hw-Hz-ARj" secondAttribute="bottom" id="coG-D3-5PZ"/>
@@ -190,13 +191,17 @@
                             <constraint firstItem="Pj8-gv-KwR" firstAttribute="leading" secondItem="7G6-eU-wVF" secondAttribute="leading" id="sgd-cf-wzP"/>
                             <constraint firstItem="4bQ-zi-Det" firstAttribute="top" secondItem="od9-RR-gqg" secondAttribute="bottom" constant="533" id="uyt-aM-MA8"/>
                             <constraint firstAttribute="trailing" secondItem="Pj8-gv-KwR" secondAttribute="trailing" id="vIy-9S-Lda"/>
+                            <constraint firstItem="4bQ-zi-Det" firstAttribute="bottom" secondItem="IJE-5K-QNN" secondAttribute="top" id="xWy-Rv-Mcv"/>
                             <constraint firstItem="Pj8-gv-KwR" firstAttribute="top" secondItem="eFP-pl-zGZ" secondAttribute="bottom" constant="2" id="z4E-vD-aQg"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="HZy-uD-hat"/>
                                 <exclude reference="gC2-fN-iWk"/>
+                                <exclude reference="DLM-RA-oPI"/>
+                                <exclude reference="uyt-aM-MA8"/>
                                 <exclude reference="Faz-Vk-TzJ"/>
+                                <exclude reference="coG-D3-5PZ"/>
                             </mask>
                         </variation>
                     </view>
