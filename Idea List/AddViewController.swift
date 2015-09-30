@@ -39,6 +39,12 @@ class AddViewController: UIViewController {
     func detailContentDidChange() {
         handleButtonStates()
     }
+    
+    @IBAction func addButton_click(sender: AnyObject) {
+        // clear out the text fields. 
+        titleText.text = ""
+        detailContent.text = ""
+    }
 
     @IBAction func doneButton_click(sender: AnyObject) {
         detailContent.resignFirstResponder()

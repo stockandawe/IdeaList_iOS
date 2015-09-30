@@ -153,6 +153,9 @@
                                 <state key="normal" title="ADD">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="addButton_click:" destination="U0C-7P-gl2" eventType="touchUpInside" id="sxB-F1-hnA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
