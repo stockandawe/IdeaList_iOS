@@ -26,10 +26,18 @@ class ViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("customcell", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("customcell", forIndexPath: indexPath) as! customcell
         cell.textLabel?.text = array[indexPath.item]
+        cell.Idea = cell.textLabel?.text
         return cell
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "detailview") {
+            let cell = sender as! customcell
+            let detailview = segue.destinationViewController as! DetailViewController
+            detailview.ideaDetail = cell.Idea
+        }
+    }
 }
 

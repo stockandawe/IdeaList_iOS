@@ -10,12 +10,18 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    var ideaDetail:String?
+
     @IBOutlet weak var detailContent: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        self.title = ideaDetail
     }
 
     override func didReceiveMemoryWarning() {
