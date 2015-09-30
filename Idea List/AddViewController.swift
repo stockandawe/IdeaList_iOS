@@ -24,6 +24,13 @@ class AddViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func doneButton_click(sender: AnyObject) {
+        detailContent.resignFirstResponder()
+    }
+    
+    @IBAction func titleDoneButton_click(sender: AnyObject) {
+        titleText.resignFirstResponder()
+    }
 
     /*
     // MARK: - Navigation
