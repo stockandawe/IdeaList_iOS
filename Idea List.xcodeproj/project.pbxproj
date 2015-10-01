@@ -19,6 +19,7 @@
 		6597B9F61BBC5AAC002E6E91 /* customcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6597B9F51BBC5AAC002E6E91 /* customcell.swift */; settings = {ASSET_TAGS = (); }; };
 		65E0BEC71BBC9B86005324D2 /* Idea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E0BEC61BBC9B86005324D2 /* Idea.swift */; settings = {ASSET_TAGS = (); }; };
 		65E0BEC91BBC9BDF005324D2 /* IdeaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E0BEC81BBC9BDF005324D2 /* IdeaManager.swift */; settings = {ASSET_TAGS = (); }; };
+		65F00C221BBD184A007C0A15 /* NSUserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F00C211BBD184A007C0A15 /* NSUserDefaultsManager.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		6597B9F51BBC5AAC002E6E91 /* customcell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = customcell.swift; path = ../customcell.swift; sourceTree = "<group>"; };
 		65E0BEC61BBC9B86005324D2 /* Idea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Idea.swift; path = ../Idea.swift; sourceTree = "<group>"; };
 		65E0BEC81BBC9BDF005324D2 /* IdeaManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IdeaManager.swift; path = ../IdeaManager.swift; sourceTree = "<group>"; };
+		65F00C211BBD184A007C0A15 /* NSUserDefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSUserDefaultsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		659441301BBB61A100555E04 /* Idea List */ = {
 			isa = PBXGroup;
 			children = (
+				65F00C211BBD184A007C0A15 /* NSUserDefaultsManager.swift */,
 				65E0BEC61BBC9B86005324D2 /* Idea.swift */,
 				65E0BEC81BBC9BDF005324D2 /* IdeaManager.swift */,
 				659441311BBB61A100555E04 /* AppDelegate.swift */,
@@ -271,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6597B9F61BBC5AAC002E6E91 /* customcell.swift in Sources */,
+				65F00C221BBD184A007C0A15 /* NSUserDefaultsManager.swift in Sources */,
 				659441341BBB61A100555E04 /* ViewController.swift in Sources */,
 				65E0BEC71BBC9B86005324D2 /* Idea.swift in Sources */,
 				659441321BBB61A100555E04 /* AppDelegate.swift in Sources */,

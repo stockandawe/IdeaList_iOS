@@ -52,6 +52,8 @@ class AddViewController: UIViewController {
         titleText.text = ""
         detailContent.text = ""
 
+        NSUserDefaultsManager.synchronize()
+
         // Add a delay so that the ActivityIndicator shows
         let time = dispatch_time(DISPATCH_TIME_NOW, Int64(0.5*Double(NSEC_PER_SEC)))
         dispatch_after(time, dispatch_get_main_queue()) {
