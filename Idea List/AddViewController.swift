@@ -14,6 +14,7 @@ class AddViewController: UIViewController {
     @IBOutlet weak var detailContent: UITextView!
     @IBOutlet weak var doneButton: UIBarButtonItem!
     @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,14 +42,21 @@ class AddViewController: UIViewController {
     }
     
     @IBAction func addButton_click(sender: AnyObject) {
+        // Start an ActivityIndicator
+        activityIndicator.startAnimating()
+
         // Call AddIdea
         IdeaManager.AddIdea(titleText.text!, detail: detailContent.text)
-        
+
         // clear out the text fields.
         titleText.text = ""
         detailContent.text = ""
-        
 
+        // Add a delay so that the ActivityIndicator shows
+        let time = dispatch_time(DISPATCH_TIME_NOW, Int64(0.5*Double(NSEC_PER_SEC)))
+        dispatch_after(time, dispatch_get_main_queue()) {
+            self.activityIndicator.stopAnimating()
+        }
     }
 
     @IBAction func doneButton_click(sender: AnyObject) {

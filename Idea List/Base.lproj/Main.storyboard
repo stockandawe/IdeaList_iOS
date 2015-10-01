@@ -156,6 +156,9 @@
                                     <action selector="addButton_click:" destination="U0C-7P-gl2" eventType="touchUpInside" id="sxB-F1-hnA"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="kgY-RC-yi5">
+                                <rect key="frame" x="178" y="323" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <accessibility key="accessibilityConfiguration" identifier="">
@@ -216,6 +219,7 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="kgY-RC-yi5" id="RKG-pY-GkH"/>
                         <outlet property="addButton" destination="4bQ-zi-Det" id="PtL-SO-hhu"/>
                         <outlet property="detailContent" destination="5Hw-Hz-ARj" id="iwt-jf-VgD"/>
                         <outlet property="doneButton" destination="Udy-Yt-T6l" id="cEC-RP-8fy"/>
