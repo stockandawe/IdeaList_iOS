@@ -22,6 +22,7 @@ class DetailViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         self.title = ideaDetail!.title
+        self.detailContent.text = ideaDetail!.detail
     }
 
     override func didReceiveMemoryWarning() {
