@@ -13,6 +13,7 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.tableView.rowHeight = 60.0
 
         NSUserDefaultsManager.initializeDefault()
     }
@@ -35,6 +36,8 @@ class ViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("customcell", forIndexPath: indexPath) as! customcell
         
         let idea = IdeaManager.ideas[indexPath.item]
+        cell.textLabel?.lineBreakMode = .ByWordWrapping
+        cell.textLabel?.numberOfLines = 0
         cell.textLabel?.text = idea.title
         cell.idea = idea
         return cell
